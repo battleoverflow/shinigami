@@ -1,15 +1,21 @@
-# Shinigami
+<h1 align="center">
+    <!-- <img src="#" />
+    <br /> -->
+    Shinigami
+</h1>
 
-Shinigami is an open source Python module allowing the user to generate and build a Dockerfile during runtime.
+<p align="center">
+    <b>Shinigami was created to be simplistic and maintainable</b>
+</p>
+
+Shinigami is an open source Python module allowing the user to generate and build a Dockerfile during runtime. This module is built out using vanilla Python with no external modules, so you won't have to download any external resources to actually to run this library.
 
 ## Usage
 
-You can install Shinigami via `pip`:
+You can install Shinigami via pip:
 ```bash
 pip install shinigami
 ```
-
-Shinigami was created to be simplistic and maintainable. This means we've created a simple class called `Shinigami`, which can be called anywhere in your application. From here, you can call the `generate_dockerfile()` function. This allows the flexibility to only require a single call in your application, but multiple file generations.
 
 ### Quick Example
 ```python
@@ -21,6 +27,8 @@ def create_file():
 if __name__ == '__main__':
     create_file()
 ```
+
+If you just want to generate the Dockerfile without building the container, you can do that too. Just remove the `build` parameter from the class and you should see a Dockerfile populate in your current directory within seconds.
 
 There are currently 3 seperate parameters you can choose from:
 
