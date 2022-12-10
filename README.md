@@ -1,6 +1,6 @@
 <h1 align="center">
-    <!-- <img src="#" />
-    <br /> -->
+    <img src=".github/assets/shinigami_logo.png" />
+    <br />
     Shinigami
 </h1>
 
