@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "shinigami",
-    version = "0.1.5",
+    version = "0.1.6",
     author = "Hifumi1337",
     description = "Shinigami is an open source package allowing the user to generate and build Dockerfiles during runtime",
     long_description = long_description,
