@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src=".github/assets/shinigami_logo.png" />
+    <img src="https://raw.githubusercontent.com/stience/shinigami/main/.github/assets/shinigami_logo.png" />
     <br />
     Shinigami
 </h1>
@@ -8,7 +8,7 @@
     <b>Shinigami was created to be simplistic and maintainable</b>
 </p>
 
-Shinigami is an open source Python module allowing the user to generate and build a Dockerfile during runtime. This module is built out using vanilla Python with no external modules, so you won't have to download any external resources to actually to run this library.
+Shinigami is an open source Python module allowing the user to generate and build Dockerfiles during runtime. This module is built using vanilla Python with no external modules, so you won't have to download any external resources to actually to run this library.
 
 ## Usage
 
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     create_file()
 ```
 
-If you just want to generate the Dockerfile without building the container, you can do that too. Just remove the `build` parameter from the class and you should see a Dockerfile populate in your current directory within seconds.
+If you just want to generate the Dockerfile without building the container, you can do that too. Just remove the `build` boolean from the class and you should see a Dockerfile populate in your current directory within seconds.
 
 There are currently 3 seperate parameters you can choose from:
 
