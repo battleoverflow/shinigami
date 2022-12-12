@@ -1,3 +1,9 @@
+"""
+    Owner: CyberSuki (https://github.com/cybersuki)
+    Project: Shinigami
+    License: BSD 2-Clause
+"""
+
 import os, requests
 
 # Logging library
@@ -5,7 +11,7 @@ from faye.faye import Faye
 
 class Shinigami():
     """
-    Shinigami is an open source Python module allowing the user to generate and build Dockerfiles during runtime
+    Shinigami is an open source Python library allowing the user to generate and build Dockerfiles during runtime
     """
 
     def __init__(self, lang_os="", version="", build=False):
@@ -17,10 +23,11 @@ class Shinigami():
         """
         Generate a Dockerfile your current working directory
         """
+        
         try:
 
             # Queries open source Dockerfile repository
-            docker_data = requests.get(f"https://raw.githubusercontent.com/stience/StoreDock/main/Docker/{self.lang_os}/{self.version}/Dockerfile")
+            docker_data = requests.get(f"https://raw.githubusercontent.com/cybersuki/StoreDock/main/Docker/{self.lang_os}/{self.version}/Dockerfile")
 
             # Checks the status code for the repository connection
             if docker_data.status_code == 200:
