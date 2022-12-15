@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://raw.githubusercontent.com/cybersuki/shinigami/main/.github/assets/shinigami_logo.png" />
+    <img src="https://raw.githubusercontent.com/hifumi1337/shinigami/main/.github/assets/shinigami_logo.png" />
     <br />
     Shinigami
 </h1>

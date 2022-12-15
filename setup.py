@@ -1,5 +1,5 @@
 """
-    Owner: CyberSuki (https://github.com/cybersuki)
+    Owner: Hifumi1337 (https://github.com/hifumi1337)
     Project: Shinigami
     License: BSD 2-Clause
 """
@@ -11,12 +11,12 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "shinigami",
-    version = "0.1.8",
+    version = "0.1.9",
     author = "Hifumi1337",
     description = "Shinigami is an open source Python library allowing the user to generate and build Dockerfiles during runtime",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    url = "https://github.com/cybersuki/shinigami",
+    url = "https://github.com/hifumi1337/shinigami",
     classifiers = [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: BSD License",
