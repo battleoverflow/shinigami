@@ -1,6 +1,6 @@
 """
-    Owner: Hifumi1337 (https://github.com/hifumi1337)
-    Project: Shinigami
+    Owner: Shinigamilib (https://github.com/shinigamilib)
+    Project: Shinigami (Python)
     License: BSD 2-Clause
 """
 
@@ -16,7 +16,7 @@ setuptools.setup(
     description = "Shinigami is an open source Python library allowing the user to generate and build Dockerfiles during runtime",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    url = "https://github.com/hifumi1337/shinigami",
+    url = "https://github.com/shinigamilib/shinigami-py",
     classifiers = [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: BSD License",
