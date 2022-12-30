@@ -1,5 +1,5 @@
 """
-    Owner: Shinigamilib (https://github.com/shinigamilib)
+    Owner: azazelm3dj3d (https://github.com/azazelm3dj3d)
     Project: Shinigami (Python)
     License: BSD 2-Clause
 """
@@ -11,8 +11,8 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "shinigami",
-    version = "0.1.10",
-    author = "Hifumi1337",
+    version = "0.1.11",
+    author = "azazelm3dj3d",
     description = "Shinigami is an open source Python library allowing the user to generate and build Dockerfiles during runtime",
     long_description = long_description,
     long_description_content_type = "text/markdown",

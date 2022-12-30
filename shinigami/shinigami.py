@@ -1,5 +1,5 @@
 """
-    Owner: Shinigamilib (https://github.com/shinigamilib)
+    Owner: azazelm3dj3d (https://github.com/azazelm3dj3d)
     Project: Shinigami (Python)
     License: BSD 2-Clause
 """
@@ -28,7 +28,7 @@ class Shinigami():
         try:
 
             # Queries open source Dockerfile repository
-            docker_data = requests.get(f"https://raw.githubusercontent.com/shinigamilib/StoreDock/main/Docker/{self.lang_os}/{self.version}/Dockerfile")
+            docker_data = requests.get(f"https://raw.githubusercontent.com/shinigamilib/DockDB/main/Docker/{self.lang_os}/{self.version}/Dockerfile")
 
             # Checks the status code for the repository connection
             if docker_data.status_code == 200:

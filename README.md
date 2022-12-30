@@ -1,7 +1,5 @@
 <h1 align="center">
-    <img src="https://raw.githubusercontent.com/hifumi1337/shinigami/main/.github/assets/shinigami_logo.png" />
-    <br />
-    Shinigami
+    <img src="https://raw.githubusercontent.com/azazelm3dj3d/shinigami/main/.github/assets/shinigami_logo.png" />
 </h1>
 
 <p align="center">
