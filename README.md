@@ -1,7 +1,5 @@
 <h1 align="center">
-    <img src="https://raw.githubusercontent.com/hifumi1337/shinigami/main/.github/assets/shinigami_logo.png" />
-    <br />
-    Shinigami
+    <img src="https://raw.githubusercontent.com/shinigamilib/shinigami-py/main/assets/shinigami_logo.png" />
 </h1>
 
 <p align="center">
@@ -35,3 +33,4 @@ There are currently 3 seperate parameters you can choose from:
 - `lang_os` (`str`)   - The language or operating system you should like to pull from Docker Hub (Example: `ubuntu`)
 - `version` (`str`)   - The version of the language or operating system (Example: `22.04`)
 - `build`   (`bool`)  - This allows you to choose if you would like to build the Docker container or just pull the Dockerfile without building
+- `verbose`   (`bool`)  - Logs information to stdout

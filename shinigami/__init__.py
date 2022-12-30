@@ -1,5 +1,5 @@
 """
-    Owner: Hifumi1337 (https://github.com/hifumi1337)
-    Project: Shinigami
+    Owner: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Project: Shinigami (Python)
     License: BSD 2-Clause
 """
