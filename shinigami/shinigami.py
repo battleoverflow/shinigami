@@ -1,10 +1,10 @@
 """
-    Owner: azazelm3dj3d (https://github.com/azazelm3dj3d)
-    Project: Shinigami (Python)
+    Project: Shinigami (https://github.com/shinigami-py)
+    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
     License: BSD 2-Clause
 """
 
-import os, requests
+import os, requests, sys
 
 # Logging library
 from faye.faye import Faye
@@ -28,7 +28,7 @@ class Shinigami():
         try:
 
             # Queries open source Dockerfile repository
-            docker_data = requests.get(f"https://raw.githubusercontent.com/shinigamilib/DockDB/main/Docker/{self.lang_os}/{self.version}/Dockerfile")
+            docker_data = requests.get(f"https://raw.githubusercontent.com/shinigamilib/DockDB/main/DockDB/{self.lang_os}/{self.version}/Dockerfile")
 
             # Checks the status code for the repository connection
             if docker_data.status_code == 200:
@@ -54,19 +54,23 @@ class Shinigami():
                 with open("Dockerfile", "w") as f:
                     f.write(docker_data.text)
 
-                # Builds the Docker container
-                # NOTE: This requires Docker to be installed on the user's system and be configured in the PATH
-                os.system(f"docker build . -t shinigami-{self.lang_os}{self.version}")
+                if os.path.exists("requirements.txt"):
+                    # Builds the Docker container
+                    # NOTE: This requires Docker to be installed on the user's system and be configured in the PATH
+                    os.system(f"docker build . -t shinigami-{self.lang_os}{self.version}")
 
-                if self.verbose:
-                    print(Faye.log(msg="Successfully built Docker container", level="INFO"))
+                    if self.verbose:
+                        print(Faye.log(msg="Successfully built Docker container", level="INFO"))
+                else:
+                    print(Faye.log(msg="Missing requirements.txt!", level="WARNING"))
+                    sys.exit()
 
             # If the Dockerfile doesn't exist, we do a clean exit
             if docker_data.status_code != 200:
                 if self.verbose:
                     print(Faye.log(msg="This Docker configuration is not currently supported", level="WARNING"))
                 
-                exit(0)
+                sys.exit()
         
         except Exception as e:
             return e
