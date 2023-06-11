@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://raw.githubusercontent.com/shinigamilib/shinigami-py/main/assets/shinigami_logo.png" />
+    <img src="https://raw.githubusercontent.com/shinigamilib/shinigami/main/assets/shinigami_logo.png" />
 </h1>
 
 <p align="center">
