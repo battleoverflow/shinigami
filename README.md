@@ -32,10 +32,6 @@ If you just want to generate the Dockerfile without building the container, you 
 
 ## CLI
 
-<h1 align="center">
-    <img src="https://raw.githubusercontent.com/shinigamilib/cli/main/assets/shinigamicli_logo.jpg" />
-</h1>
-
 ### Usage
 
 Available commands:
