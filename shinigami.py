@@ -118,7 +118,7 @@ class CLI:
         parser.add_argument('-rm', '--remove', help="Remove the Dockerfile in the current working directory", action='store_true', default=False, required=False)
         args = parser.parse_args()
 
-        v = "0.1.4"
+        v = "0.2.0"
 
         banner = \
         f"""
