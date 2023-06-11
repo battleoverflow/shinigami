@@ -111,11 +111,11 @@ class Shinigami:
 class CLI:
     def run():
         parser = argparse.ArgumentParser()
-        parser.add_argument('-i', '--image', help="Docker image to generate", default=None, required=False)
-        parser.add_argument('-v', '--version', help="Version of the Docker image", default=None, required=False)
-        parser.add_argument('-b', '--build', help="Build the Dockerfile after generation", action='store_true', default=False, required=False)
-        parser.add_argument('-c', '--color', help="Generate a color output", action='store_true', default=False, required=False)
-        parser.add_argument('-rm', '--remove', help="Remove the Dockerfile in the current working directory", action='store_true', default=False, required=False)
+        parser.add_argument('-i',  '--image',   help="Docker image to generate", default=None, required=False)
+        parser.add_argument('-v',  '--version', help="Version of the Docker image", default=None, required=False)
+        parser.add_argument('-b',  '--build',   help="Build the Dockerfile after generation", action='store_true', default=False, required=False)
+        parser.add_argument('-c',  '--color',   help="Generate a color output", action='store_true', default=False, required=False)
+        parser.add_argument('-rm', '--remove',  help="Remove the Dockerfile in the current working directory", action='store_true', default=False, required=False)
         args = parser.parse_args()
 
         v = "0.2.0"
