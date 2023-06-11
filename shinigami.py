@@ -12,7 +12,17 @@ from faye.faye import Faye
 
 class Shinigami:
     """
-    Shinigami is an open source Python library allowing the user to generate and build Dockerfiles during runtime
+    Shinigami is an open source Python library allowing the user to generate and build Dockerfiles during runtime.
+    
+    `lang_os` rtype: `str` - The language or operating system you would like to pull from DockDB (Example: `ubuntu`)
+    
+    `version` rtype: `str` - The version of the language or operating system (Example: `22.04`)
+    
+    `build` rtype: `bool` - This allows you to choose if you would like to build the Docker container during runtime
+    
+    `verbose` rtype: `bool` - Logs information to stdout
+
+    `color` rtype: `bool` - Add some color to your logs
     """
 
     def __init__(self, lang_os="", version="", build=False, verbose=False, color=False):
@@ -64,7 +74,7 @@ class Shinigami:
                     if self.verbose:
                         print(Faye.log(msg="Successfully built Docker container", level="INFO", color=self.color))
                 else:
-                    print(Faye.log(msg="Missing requirements.txt!", level="WARNING", color=self.color))
+                    print(Faye.log(msg="Missing requirements.txt", level="WARNING", color=self.color))
                     sys.exit()
 
             # If the Dockerfile doesn't exist, we do a clean exit
