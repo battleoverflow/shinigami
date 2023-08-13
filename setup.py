@@ -1,5 +1,5 @@
 """
-    Project: Shinigami (https://github.com/shinigamilib/shinigami)
+    Project: Shinigami (https://github.com/azazelm3dj3d/shinigami)
     Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
     License: BSD 2-Clause
 """
@@ -17,7 +17,7 @@ setuptools.setup(
     long_description = long_description,
     long_description_content_type = "text/markdown",
     py_modules=['shinigami'],
-    url = "https://github.com/shinigamilib/shinigami",
+    url = "https://github.com/azazelm3dj3d/shinigami",
     classifiers = [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: BSD License",

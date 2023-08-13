@@ -1,5 +1,5 @@
 """
-    Project: Shinigami (https://github.com/shinigamilib/shinigami)
+    Project: Shinigami (https://github.com/azazelm3dj3d/shinigami)
     Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
     License: BSD 2-Clause
 """
@@ -38,9 +38,8 @@ class Shinigami:
         """
         
         try:
-
             # Queries open source Dockerfile repository
-            docker_data = requests.get(f"https://raw.githubusercontent.com/shinigamilib/DockDB/main/DockDB/{self.lang_os}/{self.version}/Dockerfile")
+            docker_data = requests.get(f"https://raw.githubusercontent.com/azazelm3dj3d/DockDB/main/DockDB/{self.lang_os}/{self.version}/Dockerfile")
 
             # Checks the status code for the repository connection
             if docker_data.status_code == 200:
@@ -133,7 +132,7 @@ class CLI:
 
         Shinigami CLI | v{v}
         Author: https://github.com/azazelm3dj3d
-        Learn more: https://github.com/shinigamilib/shinigami
+        Learn more: https://github.com/azazelm3dj3d/shinigami
         """
 
         print(banner)
