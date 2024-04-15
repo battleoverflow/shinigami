@@ -1,6 +1,6 @@
 """
-    Project: Shinigami (https://github.com/azazelm3dj3d/shinigami)
-    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Project: Shinigami (https://github.com/battleoverflow/shinigami)
+    Author: battleoverflow (https://github.com/battleoverflow)
     License: BSD 2-Clause
 """
 
@@ -39,7 +39,7 @@ class Shinigami:
         
         try:
             # Queries open source Dockerfile repository
-            docker_data = requests.get(f"https://raw.githubusercontent.com/azazelm3dj3d/DockDB/main/DockDB/{self.lang_os}/{self.version}/Dockerfile")
+            docker_data = requests.get(f"https://raw.githubusercontent.com/battleoverflow/DockDB/main/DockDB/{self.lang_os}/{self.version}/Dockerfile")
 
             # Checks the status code for the repository connection
             if docker_data.status_code == 200:
@@ -131,8 +131,8 @@ class CLI:
                                |___/                                        
 
         Shinigami CLI | v{v}
-        Author: https://github.com/azazelm3dj3d
-        Learn more: https://github.com/azazelm3dj3d/shinigami
+        Author: https://github.com/battleoverflow
+        Learn more: https://github.com/battleoverflow/shinigami
         """
 
         print(banner)

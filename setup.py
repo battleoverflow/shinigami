@@ -1,6 +1,6 @@
 """
-    Project: Shinigami (https://github.com/azazelm3dj3d/shinigami)
-    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Project: Shinigami (https://github.com/battleoverflow/shinigami)
+    Author: battleoverflow (https://github.com/battleoverflow)
     License: BSD 2-Clause
 """
 
@@ -11,13 +11,13 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "shinigami",
-    version = "0.2.0",
-    author = "azazelm3dj3d",
+    version = "0.2.1",
+    author = "battleoverflow",
     description = "Shinigami is an open source Python library allowing the user to generate and build Dockerfiles during runtime",
     long_description = long_description,
     long_description_content_type = "text/markdown",
     py_modules=['shinigami'],
-    url = "https://github.com/azazelm3dj3d/shinigami",
+    url = "https://github.com/battleoverflow/shinigami",
     classifiers = [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: BSD License",
